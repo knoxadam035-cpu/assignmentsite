@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: #e5e5e5;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+header{
+    background-color: black;
+    overflow: hidden;
+}
+
+#hamburger_checkbox{
+    display: none;
+}
+
+#hamburger_image{
+    background-color: rgba(255, 255, 255, 0);
+    display: block;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: 50px;
+    filter: invert(90%)
+}
+
+input[id="hamburger_checkbox"]:not(:checked) + nav{
+    display: none;
+}
+
+h1{
+    color: #fca311;
+    padding: 0 20px;
+    text-align: center;
+    width: 100%;
+  }
+
+h2{
+    color: black;
+    text-align: center;
+    width: 100%
+}
+
+nav a {
+color: #e5e5e5;							
+float: left;
+font-size: 20px;
+padding: 20px 15px;
+text-align: center;
+text-decoration: underline overline;
+width: 100%;
+}
+  
+nav a:hover {
+background-color: #e5e5e5;
+color: black;
+}
+  
+nav a:focus {
+background-color: white;
+color: black;
+outline: none;
+}
+  
+.active_nav {
+background-color: #e5e5e5;
+color: black;
+}
+  
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+	background: black;
+  color: #fca311;
+	padding: 0px;
+	text-align: center;
+	width: 100%;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 8px;
+}
+  
+@media only screen and (min-width: 768px) {
+
+  #hamburger_image {
+  display: none;
+  }
+  
+  input[id="hamburger_checkbox"]:not(:checked) + nav {
+  display:block
+  }
+  
+  h1 {
+  text-align: center;
+  width: auto;
+  }
+  
+  nav {
+  float: right;
+  } 
+  
+  nav a {
+  width: auto;
+  }
+  }
+  
+  
